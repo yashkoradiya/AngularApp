@@ -1,0 +1,17 @@
+<div>
+
+    <form [formGroup]= "form"(ngSubmit)="showValue(form.value)">
+  
+    FirstName:<input type ="text" name="firstname" FormControlName="firstname">
+  
+    lastName:<input type ="text" name="lastname" FormControlName="lastname">
+  
+    <input type="submit" [disabled]="!form.valid"value="submit" />
+  
+    </form>
+  
+  
+  
+    {{fname}} + {{lname}}
+  
+  </div>

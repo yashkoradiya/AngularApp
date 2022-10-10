@@ -1,0 +1,36 @@
+<div>
+
+    <form [formGroup]= "form"(ngSubmit)="showValue(form.value)">
+
+       
+
+        UserName:<input type ="text" name="userUserName" formControlName="userUserName"><br>
+
+        FirstName:<input type ="text" name="userFirstName" formControlName="userFirstName"><br>
+
+        LastName:<input type ="text" name="userLastName" formControlName="userLastName"><br>
+
+        Email:<input type ="text" name="userEmail" formControlName="userEmail"><br>
+
+        Password:<input type ="text" name="userPassword" formControlName="userPassword"><br>
+
+        Gender:<input type ="text" name="userGender" formControlName="userGender"><br>
+
+        
+
+        <input type="submit" [disabled]="!form.valid"value="submit" /><br>
+
+    </form>
+
+    {{posData.userFirstName}}
+
+    {{posData.userLastName}}
+
+    {{posData.userEmail}}
+
+    {{posData.userPassword}}
+
+    {{posData.userGender}}
+
+
+</div>
